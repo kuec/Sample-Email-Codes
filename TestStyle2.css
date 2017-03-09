@@ -1,0 +1,1010 @@
+﻿body{
+    padding:0px;
+    margin:0px;
+}
+#rpt_Monthly_CDP_Report{
+    padding:0px;
+    margin:0px;
+    text-align: center;
+}
+iframe{
+    border:0px;
+}
+/*BASE STYLE*/
+
+.mainContainer-Admin {
+        position:absolute;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+        overflow:hidden;
+        background-color: #2d2d2d;
+}
+
+.mainContainer-ENG {
+        position:absolute;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+        overflow:hidden;
+        background-color: #2ab0ed;
+}
+
+.mainContainer-TCP {
+        position:absolute;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+        overflow:hidden;
+        background-color: #800000;
+}
+
+.mainContainer-Ins {
+        position:absolute;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+        overflow:hidden;
+        background-color: #a2c485;
+}
+
+.PermitTableContainer-Admin {
+    /*height: auto;*/
+    background-color: white;
+}
+
+.PermitTableContainer-Eng {
+    /*height: auto;*/
+    background-color: #e4f5fc;
+}
+
+.PermitTableContainer-Tcp {
+    /*height: auto;*/
+    background-color: #d8b1b1;
+}
+
+
+.PermitTableContainer-Ins {
+    /*height: auto;*/
+    background-color: #398235;
+}
+
+
+/*HEADER STYLES*/
+
+.HeaderDiv {
+    width: 100%;
+    /*background-color: forestgreen;*/
+}
+
+.IconButtonBox {
+    float: left;
+    /*width: 10%;*/
+    /*text-align: center;*/
+}
+
+.IconButtonBox-Tcp {
+    float: left;
+}
+
+.TitlePageBox-Ins {
+    background-color: #a2c485;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.TitlePage-Ins {
+    font-size: xx-large; font-weight: bold;
+    color: white;
+    height: 55px;
+    /*float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;*/
+}
+
+.TitlePageBox-Admin {
+    background-color: #2d2d2d;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.TitlePage-Admin {
+    font-size: xx-large; font-weight: bold;
+    color: white;
+    height: 55px;
+    /*float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;*/
+}
+
+.TitlePageBox-Eng {
+    background-color: #2ab0ed;
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.TitlePage-Eng {
+    font-size: xx-large; font-weight: bold;
+    color: navy;
+    height: 55px;
+    /*float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;*/
+}
+
+.TitlePageBox-Tcp {
+    background-color: #800000;
+    width: 100%;
+    /*height: 55px;*/
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.TitlePage-Tcp {
+    font-size: xx-large; font-weight: bold;
+    color: white;
+    height: 55px;
+    /*float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;*/
+}
+
+.TitlePage-Ins {
+    font-size: xx-large; font-weight: bold;
+    color: white;
+    height: 55px;
+    /*float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;*/
+}
+
+.SmallButton{
+    display:block;
+    /*text-align:center;
+    border:0px solid black;
+    text-decoration:none;
+    background-position-x:center;
+    background-position-y:center;*/
+    opacity:.75;
+    /*color:black;
+    float:left;
+    height:5px;*/
+    width:65px;
+    padding-top:65px;
+    /*padding-bottom:5px;
+    font-size:x-large;*/
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*HEADER NAVIGATION STYLES*/
+
+.HeaderNav {
+    background-color: silver;
+    text-align: center;
+    padding-top:10px; padding-bottom: 10px;
+}
+
+.HeaderNav-Ins {
+    background-color: #398235;
+    text-align: center;
+    padding-top:10px; padding-bottom: 10px;
+}
+
+.HeaderNav-Tcp {
+    background-color: #b30000;
+    text-align: center;
+    padding-top:10px; padding-bottom: 10px;
+}
+
+ul#viewLinks {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+ul#viewLinks li {
+    display: inline;
+    font-size: 20px;
+}
+
+ul#viewLinks li a {
+    background-color: #666666;
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-right: 2px silver solid;
+}
+
+ul#viewLinks li a:hover {
+    background-color: skyblue;
+}
+
+.HeaderNav a.class_on {
+    color: white;
+    background-color: deepskyblue;
+    
+
+}
+
+.HeaderNav a.class_off {
+    color: white;
+    background-color: #666666;
+
+}
+
+.HeaderNav-Ins a.class_on {
+    color: white;
+    background-color: deepskyblue;
+    
+
+}
+
+.HeaderNav-Ins a.class_off {
+    color: white;
+    background-color: #666666;
+
+}
+
+.HeaderNav a.class_off {
+    color: white;
+    background-color: #666666;
+
+}
+
+.HeaderNav-Tcp a.class_on {
+    color: white;
+    background-color: deepskyblue;
+    
+
+}
+
+.HeaderNav-Tcp a.class_off {
+    color: white;
+    background-color: #666666;
+
+}
+
+.class_off, .class_on {
+    padding: 5px;
+    text-decoration: none;
+}
+
+a.class_off:hover, a.class_on:hover {
+    background-color: deepskyblue;
+}
+
+/*MAIN BODY STYLES*/
+
+.MainBody-Admin {
+    background-color: #2d2d2d;
+}
+
+.MainBodyLeft-Admin {
+    
+    float: left;
+    width: 10%;
+    padding-top: 10px; padding-bottom: 10px;
+    background-color: silver;
+    height: 1000px;
+}
+
+.MainBody-Eng {
+    background-color: dodgerblue;
+}
+
+.MainBody-Tcp {
+    background-color: #800000;
+}
+
+.MainBodyLeft-Tcp {
+    background-color: #b30000;
+    float: left;
+    width: 10%;
+    padding-top: 10px; padding-bottom: 10px;
+    height: 1000px;
+}
+
+
+.MainBodyLeft-Eng {
+    background-color: silver;
+    float: left;
+    width: 10%;
+    padding-top: 10px; padding-bottom: 10px;
+    height: 1000px;
+}
+
+.MainBody-Ins {
+
+    background-color: #a2c485;
+}
+
+.MainBodyLeft-Ins {
+    background-color:  #398235;
+    float: left;
+    width: 10%;
+    padding-top: 10px; padding-bottom: 10px;
+    height: 830px;
+}
+
+.MainBodyRight {
+    background-color: purple;
+    float: left;
+    width: 90%;
+}
+
+.BodyRightNav {
+    background-color: skyblue;
+    float: left;
+    width: 100%;
+}
+
+/*SUBFORM LINK STYLING*/
+
+#subFormLinkBox-Admin {
+    background-color: #2d2d2d;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*#subFormLinkBox-Admin {
+    
+    padding-top: 5px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}*/
+
+#permitsTableBG{
+    padding:0px;
+    margin:0px;
+}
+
+#subFormLinkBox-Eng {
+    background-color: dodgerblue; 
+    /*margin-top: 5px;*/
+    padding-top: 5px; padding-bottom: 5px;
+}
+
+#subFormLinkBox-Tcp {
+    background-color: #C64646; 
+    padding-top: 5px; padding-bottom: 5px;
+}
+
+#subFormLinkBox-Ins {
+    background-color: #a2c485;
+    /*margin-top: 5px;*/
+    padding-top: 5px; padding-bottom: 5px;
+}
+
+ul#SubFormLinks {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    margin-top: 5px;
+}
+
+ul#SubFormLinks li {
+    display: inline;
+    font-size: 12px;
+    margin: 5px;
+    border-radius: 10px 10px 0 0;
+}
+
+ul#SubFormLinks li a {
+    background-color: #285e71;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+ul#SubFormLinks li a:hover {
+    background-color: #93c6d9;
+}
+
+ul#SubFormLinks li a.current:link {
+    background-color: #93c6d9;
+}
+
+/*BODY NAVIGATION RIGHT STYLING*/
+
+.BodyRightNav {
+    background-color: mediumpurple;
+    padding-top: 10px; padding-bottom: 10px;
+    text-align: center;
+}
+
+ul#RecordLinks {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    margin-right: 125px;
+}
+
+ul#RecordLinks li {
+    font-size: 18px;
+    display: inline;
+}
+
+ul#RecordLinks li a {
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-right: 2px solid mediumpurple;
+}
+
+ul#RecordLinks li a:hover {
+    background-color: deepskyblue;
+}
+
+.DDLStyle {
+    width: 100%;
+}
+
+/*BODY NAVIGATION LEFT STYLING*/
+
+ul#FormLinks {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+ul#FormLinks li {
+    font-size: 15px;
+    list-style-type: none;
+}
+
+ul#FormLinks li a {
+    text-decoration: none;
+    color: white;
+    background-color: #7db6b7;
+    display: block;
+    text-align: center;
+    padding-top: 5px; padding-bottom: 5px;
+    border-bottom: 1px solid cornflowerblue;
+}
+ul#FormLinks li a:hover {
+    color: navy;
+}
+
+/*SEARCH RESULTS STYLING*/
+
+.searcharea {
+    color: white;
+    top: 15px;
+    right: 15px;
+    width: 400px;
+    /*float: right;*/
+    text-align: right;
+    position: fixed;
+    z-index: 999;
+}
+
+.SearchField {
+    width: 300px;
+}
+
+.SearchBox {
+    width: 100%;
+    /*border: 1px solid #000000;*/    
+}
+
+.searchResults{
+    width:100%;
+    background-color:white;
+    max-height:400px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    overflow-x: auto;
+    z-index:999;
+    float:left;
+}
+
+.SearchLink {
+    width:100%;
+    padding:0px;
+    margin-bottom:2px;
+    margin:0px;
+    text-decoration:none;
+    color:black;
+    /*border:1px solid black;*/
+    min-height:50px;
+    display:block;
+    overflow:hidden;
+    margin-top:-1px;
+
+}
+
+.SearchLink:hover {
+    background-color:#d0d0d0;
+}
+
+.SearchResultID {
+    float:left; 
+    font-weight:bold;
+    padding-bottom:1px;
+    width:100%;
+    /*border-right:1px solid black;
+    border-bottom:1px solid black;*/
+    margin-bottom:0px;
+    margin-top:5px;
+
+}
+.SearchResultField {
+    padding:0px;
+    margin:0px;
+    float:left;
+    width:auto;
+}
+.SearchResultValue {
+    padding:0px;
+    margin:0px;
+    font-size:x-small;
+    padding-left:2px;
+    padding-bottom:15px;
+}
+
+.ResultsBox{
+    float:left;
+    width:100%;
+    font-size:small;
+}
+
+
+/*TABLE STYLING*/
+
+.TableWrapper {
+    background-color: dodgerblue;
+}
+
+.TableWrapper-Tcp {
+    background-color: #C64646;
+}
+
+.TableWrapper-Admin {
+    background-color: #2d2d2d;
+}
+
+.TableWrapper-Ins {
+    background-color: #a2c485;
+}
+
+#TableFrame {
+    width: 98%;
+    /*height: 780px;*/
+    /*height: 850px;*/
+    height: 850px;
+}
+
+#TableFrame-TCP {
+    width: 98%;
+    /*height: 780px;*/
+    height: 850px;
+}
+
+#GridBox_Admin {
+    overflow: scroll; width: 100%; height: 695px;
+}
+
+#GridBox_ENG {
+    overflow: scroll; width: 100%; height: 695px;
+}
+
+#GridBox_Tcp {
+    overflow: scroll; width: 100%; height: 650px;
+}
+
+#GridBox_INS {
+    overflow: scroll; width: 100%; height: 695px;
+}
+
+/*RESPONSIVE CODING*/
+
+@media only screen and (max-width: 1000px) {
+
+    .mainContainer {
+        position:absolute;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+    }
+
+    .mainContainer-TCP {
+        position:absolute;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+    }
+
+    /*.searcharea {
+        position: fixed;
+        z-index: 999;
+
+    }*/
+
+    .IconButtonBox {
+        width: 10%;
+        float: left;
+    }
+
+    .IconButtonBox-Tcp {
+        width: 10%;
+    }
+
+    .TitlePageBox-Admin {
+        width: 99%;
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .TitlePageBox-Eng {
+        width: 99%;
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .TitlePageBox-Ins {
+        width: 99%;
+        height: 75px;
+        margin-top: 10px;
+    }
+
+    .TitlePageBox-Tcp {
+        width: 99%;
+        height: 60px;
+        margin-top: 10px;
+}
+
+    #permitForm .PermitFilterBox {
+        width: 100%;
+        
+    }
+
+    .DDLbox3 {
+        float: none;
+        /*text-align: left;*/
+        width: 40%;
+    }
+
+    html, body {
+        /*overflow-y: auto;
+        overflow-x: hidden;*/
+    }
+
+    .PermitTableContainer-Admin {
+        width: 100%;
+        /*overflow-x: scroll;*/
+    }
+
+    .PermitTableContainer-Eng {
+        width: 100%;
+        /*overflow-x: scroll;*/
+    }
+
+    .PermitTableContainer-Tcp {
+        width: 100%;
+        /*overflow-x: scroll;*/
+    }
+
+    .PermitTableContainer-Ins {
+        width: 100%;
+        /*overflow-x: scroll*/
+    }
+
+    #GridBox_Admin {
+       height: 600px;
+    }
+
+    #GridBox_ENG {
+       height: 575px;
+    }
+
+    #GridBox_Tcp {
+       height: 575px;
+    }
+
+    #GridBox_INS {
+       height: 575px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .mainContainer {
+        position:absolute;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+    }
+
+    .mainContainer-TCP {
+        position:absolute;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+    }
+
+    .PermitTableContainer-Admin {
+        width: 100%;
+    }
+
+    .PermitTableContainer-Eng {
+        width: 100%;
+    }
+
+    .PermitTableContainer-Tcp {
+        width: 100%;
+    }
+
+    .PermitTableContainer-Ins {
+        width: 100%;
+    }
+
+    .searcharea {
+        width: 375px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .mainContainer {
+        position:absolute;
+        /*overflow-y: scroll;*/
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+    }
+
+    .mainContainer-TCP {
+        position:absolute;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+    }
+
+    /*.TitlePageBox-Admin {
+        margin-top: 10px;
+        margin-left: 10px;
+    }*/
+
+    .PermitTableContainer-Admin {
+        width: 100%;
+        /*overflow-x: scroll;*/
+    }
+
+    .PermitTableContainer-Eng {
+        width: 100%;
+        /*overflow-x: scroll;*/
+    }
+
+    .PermitTableContainer-Tcp {
+        width: 100%;
+    }
+
+    .PermitTableContainer-Ins {
+        width: 100%;
+        /*overflow-x: scroll;*/
+    }
+
+    .DDLbox2, .DDLbox1 {
+        width: 40%;
+        float: none;
+        text-align: left;
+    }
+
+    /*.searcharea {
+        width: 250px;
+    }*/
+
+    ul#viewLinks li a {
+    background-color: #666666;
+    color: white;
+    text-decoration: none;
+    padding: 0; margin: 1px;
+    border-right: none;
+    display: block;
+    width: 100%;
+    }
+
+    .IconButtonBox {
+        margin-top: 20px;
+    }
+
+    .IconButtonBox-Tcp {
+        margin-top: 20px;
+    }
+
+    .SearchField {
+    width: 250px;
+    }
+
+    .TitlePageBox-Admin {
+        height: 65px;
+    }
+
+    .TitlePageBox-Eng {
+        height: 90px;
+    }
+
+
+    .TitlePageBox-Ins {
+        height: 90px;
+    }
+
+    .TitlePageBox-Tcp {
+        height: 65px;
+    }
+
+    #GridBox_Admin {
+        height: 550px;
+    }
+
+    #GridBox_ENG {
+       height: 550px;
+    }
+
+    #GridBox_ENG {
+       height: 550px;
+    }
+
+    #GridBox_INS {
+       height: 550px;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    
+    .searcharea {
+        width: 350px;
+    }
+
+    .SearchField {
+        width: 275px;
+    }
+
+    .TitlePageBox-Admin {
+        text-align: left;
+        height: 75px;
+    }
+
+    .TitlePageBox-Eng {
+        text-align: left;
+        height: 75px;
+    }
+
+    .TitlePageBox-Ins {
+        text-align: left;
+        height: 75px;
+    }
+
+    .TitlePageBox-Tcp {
+        text-align: left;
+        height: 75px;
+}
+
+    .IconButtonBox {
+        margin-top: 20px;
+        padding-right: 20px;
+    }
+
+    .IconButtonBox-Tcp {
+        margin-top: 20px;
+        padding-right: 20px;
+    }
+
+    .TitlePage-Admin {
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    .TitlePage-Eng {
+        text-align: center;
+        font-size: x-large;
+        margin-top: 25px;
+    }
+
+    .TitlePage-Tcp {
+        text-align: center;
+        font-size: x-large;
+        margin-top: 25px;
+    }
+
+    .TitlePage-Ins {
+        font-size: x-large;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    ul#viewLinks li a {
+        display: block;
+        padding-left: 40px;
+    }
+
+    .HeaderNav {
+        text-align: left;
+    }
+
+    .HeaderNav-Ins {
+        text-align: left;
+    }
+
+    .HeaderNav-Tcp {
+        text-align: left;
+    }
+
+    .BodyRightNav {
+        background-color: mediumpurple;
+        padding-top: 10px; padding-bottom: 10px;
+        text-align: left;
+    }
+
+    ul#RecordLinks li {
+        display: inline;
+        margin-bottom: 1px;
+        padding-left: 20px;
+    }
+
+    ul#RecordLinks li a {
+        background-color: navy;
+        color: white;
+        text-decoration: none;
+        padding: 0;
+        border-right: none;
+    }
+
+    #subFormLinkBox {
+    padding-top: 5px;
+    }
+
+    ul#SubFormLinks li {
+        display: inline;
+        border-radius: 0 0 0 0;
+        margin-top: 5px; margin-bottom: 5px;
+    }
+
+    ul#SubFormLinks li a {
+    border-radius: 5px 5px 0 0;
+    padding: 5px;
+    }
+
+    #GridBox_Admin {
+        height: 500px;
+    }
+
+    #GridBox_ENG {
+       height: 465px;
+    }
+
+    #GridBox_Tcp {
+       height: 465px;
+    }
+
+    #GridBox_INS {
+       height: 465px;
+    }
+
+}
+

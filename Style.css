@@ -1,0 +1,687 @@
+﻿/*body {
+    font-family: Arial;
+    padding:0px;
+    margin:0px;
+    background-color: white;
+    background-image: url("../images/Arlington-TX.png"); background-repeat: no-repeat; background-attachment: fixed;
+    background-position: bottom;
+}*/
+body{
+    padding:0px;
+    margin:0px;
+    o
+}
+
+.MainBackground {
+    font-family: Arial;
+    padding:0px;
+    margin:0px;
+    background-color: orange;
+    background-image: url("../images/Arlington-TX.png"); background-repeat: no-repeat; background-attachment: fixed;
+    background-position: bottom;
+
+}
+
+.subForm_background {
+    font-family: Arial;
+    padding:0px;
+    margin:0px;
+    /*background-color: white;*/
+    padding-top: 10px;
+}
+
+.AddFormBody {
+    font-family: Arial;
+    padding:0px;
+    margin:0px;
+}
+
+
+#formBG {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2d2d2d+0,f2f2f2+100 */
+    background: rgb(45,45,45); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(45,45,45,1) 0%, rgba(242,242,242,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(45,45,45,1) 0%,rgba(242,242,242,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(45,45,45,1) 0%,rgba(242,242,242,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d2d2d', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+    padding: 10px;
+}
+
+#INSbackground {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a2c485+0,8ab66b+44,398235+100 */
+    background: rgb(162,196,133); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(162,196,133,1) 0%, rgba(138,182,107,1) 44%, rgba(57,130,53,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(162,196,133,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(162,196,133,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2c485', endColorstr='#398235',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding: 10px;
+}
+
+#ENGbackground {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4f5fc+0,bfe8f9+50,9fd8ef+51,2ab0ed+100;Blue+Gloss+%235 */
+    background: rgb(228,245,252); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(228,245,252,1) 0%, rgba(191,232,249,1) 50%, rgba(159,216,239,1) 51%, rgba(42,176,237,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(228,245,252,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 51%,rgba(42,176,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(228,245,252,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 51%,rgba(42,176,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding: 10px;
+}
+
+#PermitMapBG {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#725130+0,f2f2f2+100 */
+    background: rgb(114,81,48); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(114,81,48,1) 0%, rgba(242,242,242,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(114,81,48,1) 0%,rgba(242,242,242,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(114,81,48,1) 0%,rgba(242,242,242,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#725130', endColorstr='#f2f2f2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding: 10px;
+    height: 1000px;
+}
+
+#tableContainer {
+    background-color: #ffffff; width: 90%; position: relative; z-index: 1; float: left; top: 0px; left: 0px; 
+    padding-top: 10px; padding-left: 7px;
+}
+
+#permitForm {
+    width:100%;
+    /*background-color: white;*/
+}
+
+/*.PermitTableContainer {
+    height: 650px; overflow: auto;
+}*/
+
+h1 {
+    text-align: center;
+}
+
+.AdminHeader {
+    color: white;
+}
+
+.EngHeader {
+    color: navy;
+}
+
+.InspHeader {
+    color: white;
+}
+
+.PermitFilterBox {
+    display:block; padding-bottom:5px; padding-top: 5px; padding-left: 1%; padding-right: 1%; border:1px solid black;
+    background-color:#93c6d9;font-size:small; width: 98%;
+}
+
+.DDLbox1, .DDLbox2, .DDLbox3 {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+/*TOP FORMS*/
+
+
+#formTop {
+    height: auto;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+/* MASTER FORMS NAVIGATION */
+
+#masterFrame {
+    width: 100%; height: 100%; background-image: url('../images/coa_skyline.jpg'); background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+#MasterMapFrame {
+    width: 100%; height: 100%;
+}
+
+#masterNavFrame {
+    background-color: red;
+    width: 300px;
+    height: 100%;
+    /*margin-right: 10px;*/
+    float: left;
+    border-top-left-radius: 5px; border-bottom-left-radius: 5px;
+    -webkit-top-left-border-radius: 5px; -webkit-bottom-left-border-radius: 5px;
+    -moz-border-top-left-radius: 5px; -moz-border-bottom-left-radius: 5px;
+}
+
+/*ul#masterLinks {
+    list-style: none;
+    margin-top: 35px;
+    padding: 0;
+}
+
+ul#masterLinks a {
+    display: block;
+    background-color: #a4a3a3;
+    width: 250px;
+    color: white;
+    margin-left: auto; margin-right: auto; margin-top: 5px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+ul#masterLinks a:hover {
+    background-color: #2b558f;
+}
+
+ul#masterLinks li a.active {
+    background-color: #84f3fa;
+    color: #2b558f;
+    font-weight: bold;
+}*/
+
+
+.masterButtons {
+    font: bold 20px arial;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    vertical-align: central;
+}
+
+/* SUB MODULE NAVIGATION */
+
+.subModuleForm {
+    /*background-color: #ff0000;*/
+    border-collapse: collapse;
+    margin-top: 35px; margin-left: auto; margin-right: auto;
+    /*width: 98%;*/
+}
+
+.subModuleForm td {
+    padding: 0px;
+}
+
+div.formContent.inactive {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.msgBox {
+    text-align: center;
+    width: 388px;
+}
+
+#msgBox2 {
+    text-align: center;
+    width: 632px;
+}
+
+/* FORM NAVIGATION */
+
+ #navContainer a:link, #navContainer a:visited {
+    /*background: #7db6b7;
+    display: block;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding-top: 3px; padding-bottom: 3px; 
+    text-decoration: none;
+    text-transform: uppercase;*/
+
+    display: block;
+    width: 100%;
+    background: #7db6b7;
+    text-align: center; text-transform: uppercase;
+    background-image: -webkit-linear-gradient(top, #7db6b7, #5B8283);
+    background-image: -moz-linear-gradient(top, #7db6b7, #5B8283);
+    background-image: -ms-linear-gradient(top, #7db6b7, #5B8283);
+    background-image: -o-linear-gradient(top, #7db6b7, #5B8283);
+    background-image: linear-gradient(to bottom, #7db6b7, #5B8283);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #ffffff;
+    padding-top: 4px; padding-bottom: 4px;
+    /*border: solid #253636 1px;*/
+    text-decoration: none;
+
+}
+
+#navContainer a:hover, #navContainer a:active {
+    /*background-color: #93c6d9;
+    color: gray;*/
+
+    background: #13b9f5;
+    background-image: -webkit-linear-gradient(top, #13b9f5, #093d6d);
+    background-image: -moz-linear-gradient(top, #13b9f5, #093d6d);
+    background-image: -ms-linear-gradient(top, #13b9f5, #093d6d);
+    background-image: -o-linear-gradient(top, #13b9f5, #093d6d);
+    background-image: linear-gradient(to bottom, #13b9f5, #093d6d);
+    text-decoration: none;
+}
+
+#msgBox3 {
+    text-align: center;
+    width: 556px;
+}
+
+
+
+/* VIEW LINK STYLE */
+
+ul#viewLinks {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+ul#viewLinks li {
+    display: inline;
+    font-size: 20px;
+}
+
+ul#viewLinks li a {
+    background-color: #666666;
+    /*color: white;*/
+    text-decoration: none;
+    padding: 5px 5px;
+    border-right: 2px silver solid;
+}
+
+ul#viewLinks li a:hover {
+    background-color: skyblue;
+}
+
+
+
+
+
+/*FORM LINKS STYLE*/
+
+ul#FormLinks {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+ul#FormLinks li {
+    font-size: 15px;
+}
+
+ul#FormLinks li a {
+    text-decoration: none;
+    color: white;
+    background-color: #7db6b7;
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    padding-top: 5px; padding-bottom: 5px;
+    border-bottom: 1px solid cornflowerblue;
+}
+ul#FormLinks li a:hover {
+    color: navy;
+}
+
+/*RECORD LINKS STYLE*/
+
+ul#RecordLinks {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+ul#RecordLinks li {
+    font-size: 15px;
+    display: inline;
+}
+
+ul#RecordLinks li a {
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-right: 2px solid mediumpurple;
+}
+
+ul#RecordLinks li a:hover {
+    background-color: deepskyblue;
+}
+
+/*---------------------------*/
+/*#viewLinks {
+    list-style: none; margin: 0; padding: 0;
+}
+
+#viewLinks li {
+    display: inline;
+}
+
+ .viewButtons:hover {
+    color: white;
+    background-color: #0094ff;
+    font-weight: bold;
+}
+
+.viewButtons {
+   background-color: grey;
+   color: silver;
+}*/
+
+/*BOTTOM FORMS*/
+
+#formBottom {
+    /*background-color: #ffffff;*/
+    height: 0px;
+    width: auto;
+}
+
+
+.formHeader {
+   width: 330px;
+   text-align: center;
+   color: #ffffff;
+   font-size: larger; font-weight: bold;
+}
+
+
+/*TAB STYLING*/
+
+div.content {
+    border: #05a0fa 1px solid;
+    width: initial;
+    background-color: white;
+    /*height: 400px;*/
+    clear: left;
+    padding: 5px;
+    overflow: scroll;
+
+}
+
+div.content.inactive {
+    display: none;
+}
+
+ol#toc {
+    height: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 687px;
+}
+
+ol#toc a {
+    background-color: #a4a3a3;
+    color: white;
+    display: block;
+    float: left;
+    height: 2em;
+    padding: 10px;
+    text-decoration: none;
+    border-top-left-radius: 5px; border-top-right-radius: 5px;
+    -webkit-border-top-left: 5px; -webkit-border-top-right: 5px;
+    -moz-border-top-left-radius: 5px; -moz-border-top-right-radius: 5px;
+
+}
+
+ol#toc a:hover {
+    background: #84f3fa;
+    color: #2b558f;
+}
+
+ol#toc li {
+    float: left;
+    margin: 0 1px 0 0;
+}
+
+ol#toc li a.active {
+    background-color: #05a0fa;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*EDIT BUTTON STYLING*/
+
+img {
+    border: 0;
+}
+
+/*CONTRACTOR FORM STYLING*/
+
+#contractorForm {
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+    margin: 10px;
+    font-family: Arial;
+    width: 330px;
+}
+
+#contractorForm td {
+    padding-left: 10px; padding-right: 10px;
+}
+
+#contractorTableForm {
+    background-color: white;
+}
+
+/*SERVICE PROVIDER FORM STYLING*/
+
+#spForm {
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+    margin: 10px;
+    font-family: Arial;
+    width: 330px;
+}
+
+#spForm td {
+    padding-left: 10px; padding-right: 10px;
+}
+
+#serviceTableForm {
+    background-color: white;
+}
+
+/* SERVICE PROVIDER PAGE STYLE */
+
+#taskBox {
+    background-color: orange;
+    padding: 5px;
+}
+
+/*SERVICE PROVIDER DIRECTORY*/
+
+#SP_DirectoryTask {
+    background-color: silver;
+    padding: 5px;
+}
+
+/* INSPECTOR & ENGINEER REVIEW PAGE STYLE*/
+
+#DetailBG {
+   background-color:#808080; height: 100%;
+}
+
+.permitDetail_Table {
+    width: 500px; padding: 0; margin: 0px; /*border-collapse: collapse;*/
+}
+
+.historyBox1 {
+    width: 500px; word-break: normal;
+}
+
+.historyBox2 {
+    width: 500px; word-break: normal;
+}
+
+.ENG_INS_Gridviews {
+    width: 500px;
+}
+
+.ENG_ReviewContainer {
+    overflow-y: auto; height: 500px; background-color: #2ab0ed; padding-left: 10px; padding-right: 10px;
+}
+
+#INS_ReviewContainer {
+    overflow-y: auto; height: 500px; background-color: #a2c485; padding-left: 10px; padding-right: 10px;
+}
+
+.notesInsertContainer {
+    width: 490px;
+    padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;
+    margin:0px;
+    background: rgb(191,226,252); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(191,226,252,1) 0%, rgba(135,206,250,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(191,226,252,1) 0%,rgba(135,206,250,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(191,226,252,1) 0%,rgba(135,206,250,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfe2fc', endColorstr='#87cefa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
+    overflow:hidden;
+}
+
+
+
+.remarksField {
+    width: 485px;
+    height: 100px;
+}
+
+.fieldLabels {
+    font-weight: bold;
+}
+
+.fieldLabelBg {
+    background: rgb(226,226,226); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(226,226,226,1) 0%, rgba(192,192,192,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(226,226,226,1) 0%,rgba(192,192,192,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(226,226,226,1) 0%,rgba(192,192,192,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#c0c0c0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
+    padding-left: 5px;
+    padding-top: 10px; padding-bottom: 10px;
+}
+
+.fieldLabelBg2 {
+    background-color: silver; 
+    padding-left: 5px; padding-top: 10px; padding-bottom: 10px;
+}
+
+#child {
+    overflow-x: scroll;
+}
+
+/* PICKUP FORM STYLING */
+
+#pickupContainer {
+    background: rgb(172,249,247); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(172,249,247,1) 0%, rgba(0,139,139,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(172,249,247,1) 0%,rgba(0,139,139,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(172,249,247,1) 0%,rgba(0,139,139,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#acf9f7', endColorstr='#008b8b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding: 10px; width: 100%; height: 745px;
+
+}
+
+/* ADD CONTRACT STYLING */
+
+#AddContractorBG {
+    background: rgb(30,87,153); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    padding: 10px;
+}
+
+/* EDIT CONTRACT STYLING */
+
+#EditContractorBG {
+    display: inline-block;
+    height: 100%;
+    width: 350px;
+    padding: 10px;
+    background: rgb(30,87,153); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+/* ADD SERVICE PROVIDER STYLING */
+
+#AddProviderBG {
+    background: rgb(81,81,81); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(81,81,81,1) 0%, rgba(170,170,170,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(81,81,81,1) 0%,rgba(170,170,170,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(81,81,81,1) 0%,rgba(170,170,170,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515151', endColorstr='#aaaaaa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding: 10px;
+}
+
+/* SERVICE PROVIDER IFRAME STYLING */
+
+.spTable {
+    overflow-x: hidden; overflow-y: hidden;
+    border: none;
+}
+
+.PermitMapTable {
+    overflow-x: hidden; overflow-y: hidden;
+    border: none;
+}
+
+#editSvcPvdrLK {
+    text-decoration: none;
+}
+
+.fieldCenter {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* CONTRACTOR IFRAME STYLING */
+
+.contractor_Table {
+    overflow-x: hidden; overflow-y: hidden;
+    border: none;
+}
+
+#editSvcPvdrLK {
+
+}
+
+/* ADD SP CONTACTS STYLING */
+
+#NewSP_Background {
+    background: white; /*For browsers that don't support gradients*/
+    background: -webkit-linear-gradient(right, white, silver); /*For Safari*/ 
+    background: -o-linear-gradient(right, white, silver); /*For Opera*/
+    background: -moz-linear-gradient(right, white, silver); /*For Firefox*/
+    background: linear-gradient(to right,white, silver); /*Standard*/
+    display: inline-block;
+}
+
+.NewSP_Header {
+    text-align: center; color: white; font: bold 25px ariel, verdana;
+    background: red;
+    background: -webkit-linear-gradient(top, #990000, #b30000);
+    background: -o-linear-gradient(#990000, #b30000);
+    background: -moz-linear-gradient(#990000, #b30000);
+    background: linear-gradient(to bottom, #990000, #b30000);
+}
+
+.NewSP_Footer {
+    text-align: center; color: white;
+    background: red;
+    background: -webkit-linear-gradient(top, #b30000, #990000);
+    background: -o-linear-gradient(#b30000, #990000);
+    background: -moz-linear-gradient(#b30000, #990000);
+    background: linear-gradient(to bottom, #b30000, #990000);
+}
+
+#editSP_Formwrapper {
+    background-color: #0099CC; display: inline-block;
+    height: 100%;
+}
+
